@@ -10,6 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var drawView : DrawView!
+    
+    @IBAction func red(_ sender: UIButton) {
+        drawView.lineColor = UIColor.red.cgColor
+    }
+    
+    
+    @IBAction func blue(_ sender: UIButton) {
+        drawView.lineColor = UIColor.blue.cgColor
+    }
+    
+    @IBAction func green(_ sender: UIButton) {
+        drawView.lineColor = UIColor.green.cgColor
+    }
+    
+    @IBAction func excluir(_ sender: UIButton) {
+        drawView.excluir()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
